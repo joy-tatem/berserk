@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function showDivs(n){
+    var i;
+    var x = document.getElementsByClassName("pic");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+
+        var i = 0;
+    while(i < x.length){// slideshow using while-loop
+        {x[i].style.display = "none";
+        i = i + 1;
+    }
+    x[i].style.display ="block";
+}
+</script>
+<img class="pic" src="pain.jpg" style="width:700px; height: 450px;">
+<img class="pic" src="casca.jpg">
+<img class="pic" src="gutsface.png">
+<img class="pic" src="kiss.png">
+<img class="pic" src="sword.jpg">
+</body>
+</html>
